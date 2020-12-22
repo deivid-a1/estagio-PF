@@ -17,14 +17,17 @@ class Dict: #Criado a classe dicionário.
                             'Maria': 30,
                             'Matheus': 15,
                             'Ana': 15,
+                            'pera': 50,
+                            'uva': 2,
+                            'maçã': 55,
+                            'abacaxi': 25,
+                            'laranja': 0,
                             }
 
     '''Este método procura se a entrada do usuário está no dicionário criado acima, retornando False caso não esteja presente a chave e retornando o valor que está ligado
     a chave caso a chave exista.'''
     def searcyKey(self, key):
-        if type(key) is not str: #se a chave é uma string, caso não retorna false direto, pois nosso dicionário só possui como chave strings.
-            return False
-        elif key not in self.dictionary: #Verificando se a chave não está no dicionário, se não estiver retorna False.
+        if key not in self.dictionary: #Verificando se a chave não está no dicionário, se não estiver retorna False.
             return False
         else: #Se estiver
             return self.dictionary.get(key) #Retorna o valor da que está ligado a tal chave. A variavel key é a que está responsavel pela chave.
