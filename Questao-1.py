@@ -40,7 +40,7 @@ lista = DoubleList() #Instância da lista duplamente encadeada
 #É utilizado uma repetição que verifica todos as chaves que o usuário deseja verificar, retornando se ela está ou não está no nosso dicionário.
 exit = False
 while exit == False: #Enquanto exit for False, continuará pedindo inputs pro usuário
-    key = str(input("Digite uma chave em string, caso queira sair digite 0")) #Aqui é onde o looping pode acabar, basta que seja digitado zero.
+    key = str(input("Digite uma chave em string, caso queira sair digite 0: ")) #Aqui é onde o looping pode acabar, basta que seja digitado zero.
     if key == '0': #Se key for 0 em string, o looping finaliza aqui.
         break
     saida = dicionario.searcyKey(key) #Se o programa não finalizou significa que a saida possui uma saida, sendo ela False ou um número inteiro.
